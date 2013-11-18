@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4019DA517F94776007959F5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4019DA417F94776007959F5 /* Cocoa.framework */; };
+		D4019DAF17F94776007959F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4019DAD17F94776007959F5 /* InfoPlist.strings */; };
+		D4019DB117F94776007959F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4019DB017F94776007959F5 /* main.m */; };
+		D4019DB517F94776007959F5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4019DB317F94776007959F5 /* Credits.rtf */; };
+		D4019DB817F94776007959F5 /* BCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4019DB717F94776007959F5 /* BCAppDelegate.m */; };
+		D4019DBB17F94776007959F5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4019DB917F94776007959F5 /* MainMenu.xib */; };
+		D4019DBD17F94776007959F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4019DBC17F94776007959F5 /* Images.xcassets */; };
+		D4019DC417F94777007959F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4019DC317F94777007959F5 /* XCTest.framework */; };
+		D4019DC517F94777007959F5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4019DA417F94776007959F5 /* Cocoa.framework */; };
+		D4019DCD17F94777007959F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4019DCB17F94777007959F5 /* InfoPlist.strings */; };
+		D4019DCF17F94777007959F5 /* BigCursorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4019DCE17F94777007959F5 /* BigCursorTests.m */; };
+		D4019DDA17F9498E007959F5 /* BCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D4019DD917F9498E007959F5 /* BCWindow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4019DC617F94777007959F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4019D9917F94776007959F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4019DA017F94776007959F5;
+			remoteInfo = BigCursor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4019DA117F94776007959F5 /* BigCursor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigCursor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4019DA417F94776007959F5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D4019DA717F94776007959F5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D4019DA817F94776007959F5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D4019DA917F94776007959F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4019DAC17F94776007959F5 /* BigCursor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BigCursor-Info.plist"; sourceTree = "<group>"; };
+		D4019DAE17F94776007959F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4019DB017F94776007959F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4019DB217F94776007959F5 /* BigCursor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigCursor-Prefix.pch"; sourceTree = "<group>"; };
+		D4019DB417F94776007959F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D4019DB617F94776007959F5 /* BCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAppDelegate.h; sourceTree = "<group>"; };
+		D4019DB717F94776007959F5 /* BCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAppDelegate.m; sourceTree = "<group>"; };
+		D4019DBA17F94776007959F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D4019DBC17F94776007959F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4019DC217F94777007959F5 /* BigCursorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigCursorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4019DC317F94777007959F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4019DCA17F94777007959F5 /* BigCursorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BigCursorTests-Info.plist"; sourceTree = "<group>"; };
+		D4019DCC17F94777007959F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4019DCE17F94777007959F5 /* BigCursorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigCursorTests.m; sourceTree = "<group>"; };
+		D4019DD817F9498E007959F5 /* BCWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWindow.h; sourceTree = "<group>"; };
+		D4019DD917F9498E007959F5 /* BCWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWindow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4019D9E17F94776007959F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4019DA517F94776007959F5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4019DBF17F94777007959F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4019DC517F94777007959F5 /* Cocoa.framework in Frameworks */,
+				D4019DC417F94777007959F5 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4019D9817F94776007959F5 = {
+			isa = PBXGroup;
+			children = (
+				D4019DAA17F94776007959F5 /* BigCursor */,
+				D4019DC817F94777007959F5 /* BigCursorTests */,
+				D4019DA317F94776007959F5 /* Frameworks */,
+				D4019DA217F94776007959F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4019DA217F94776007959F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4019DA117F94776007959F5 /* BigCursor.app */,
+				D4019DC217F94777007959F5 /* BigCursorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4019DA317F94776007959F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4019DA417F94776007959F5 /* Cocoa.framework */,
+				D4019DC317F94777007959F5 /* XCTest.framework */,
+				D4019DA617F94776007959F5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4019DA617F94776007959F5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4019DA717F94776007959F5 /* AppKit.framework */,
+				D4019DA817F94776007959F5 /* CoreData.framework */,
+				D4019DA917F94776007959F5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D4019DAA17F94776007959F5 /* BigCursor */ = {
+			isa = PBXGroup;
+			children = (
+				D4019DB617F94776007959F5 /* BCAppDelegate.h */,
+				D4019DB717F94776007959F5 /* BCAppDelegate.m */,
+				D4019DD817F9498E007959F5 /* BCWindow.h */,
+				D4019DD917F9498E007959F5 /* BCWindow.m */,
+				D4019DB917F94776007959F5 /* MainMenu.xib */,
+				D4019DBC17F94776007959F5 /* Images.xcassets */,
+				D4019DAB17F94776007959F5 /* Supporting Files */,
+			);
+			path = BigCursor;
+			sourceTree = "<group>";
+		};
+		D4019DAB17F94776007959F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4019DAC17F94776007959F5 /* BigCursor-Info.plist */,
+				D4019DAD17F94776007959F5 /* InfoPlist.strings */,
+				D4019DB017F94776007959F5 /* main.m */,
+				D4019DB217F94776007959F5 /* BigCursor-Prefix.pch */,
+				D4019DB317F94776007959F5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4019DC817F94777007959F5 /* BigCursorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4019DCE17F94777007959F5 /* BigCursorTests.m */,
+				D4019DC917F94777007959F5 /* Supporting Files */,
+			);
+			path = BigCursorTests;
+			sourceTree = "<group>";
+		};
+		D4019DC917F94777007959F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4019DCA17F94777007959F5 /* BigCursorTests-Info.plist */,
+				D4019DCB17F94777007959F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4019DA017F94776007959F5 /* BigCursor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4019DD217F94777007959F5 /* Build configuration list for PBXNativeTarget "BigCursor" */;
+			buildPhases = (
+				D4019D9D17F94776007959F5 /* Sources */,
+				D4019D9E17F94776007959F5 /* Frameworks */,
+				D4019D9F17F94776007959F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigCursor;
+			productName = BigCursor;
+			productReference = D4019DA117F94776007959F5 /* BigCursor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4019DC117F94777007959F5 /* BigCursorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4019DD517F94777007959F5 /* Build configuration list for PBXNativeTarget "BigCursorTests" */;
+			buildPhases = (
+				D4019DBE17F94777007959F5 /* Sources */,
+				D4019DBF17F94777007959F5 /* Frameworks */,
+				D4019DC017F94777007959F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4019DC717F94777007959F5 /* PBXTargetDependency */,
+			);
+			name = BigCursorTests;
+			productName = BigCursorTests;
+			productReference = D4019DC217F94777007959F5 /* BigCursorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4019D9917F94776007959F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Weizhong Yang";
+				TargetAttributes = {
+					D4019DC117F94777007959F5 = {
+						TestTargetID = D4019DA017F94776007959F5;
+					};
+				};
+			};
+			buildConfigurationList = D4019D9C17F94776007959F5 /* Build configuration list for PBXProject "BigCursor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4019D9817F94776007959F5;
+			productRefGroup = D4019DA217F94776007959F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4019DA017F94776007959F5 /* BigCursor */,
+				D4019DC117F94777007959F5 /* BigCursorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4019D9F17F94776007959F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4019DAF17F94776007959F5 /* InfoPlist.strings in Resources */,
+				D4019DBD17F94776007959F5 /* Images.xcassets in Resources */,
+				D4019DB517F94776007959F5 /* Credits.rtf in Resources */,
+				D4019DBB17F94776007959F5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4019DC017F94777007959F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4019DCD17F94777007959F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4019D9D17F94776007959F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4019DDA17F9498E007959F5 /* BCWindow.m in Sources */,
+				D4019DB117F94776007959F5 /* main.m in Sources */,
+				D4019DB817F94776007959F5 /* BCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4019DBE17F94777007959F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4019DCF17F94777007959F5 /* BigCursorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4019DC717F94777007959F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4019DA017F94776007959F5 /* BigCursor */;
+			targetProxy = D4019DC617F94777007959F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4019DAD17F94776007959F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4019DAE17F94776007959F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4019DB317F94776007959F5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4019DB417F94776007959F5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D4019DB917F94776007959F5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4019DBA17F94776007959F5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D4019DCB17F94777007959F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4019DCC17F94777007959F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4019DD017F94777007959F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D4019DD117F94777007959F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4019DD317F94777007959F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigCursor/BigCursor-Prefix.pch";
+				INFOPLIST_FILE = "BigCursor/BigCursor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4019DD417F94777007959F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigCursor/BigCursor-Prefix.pch";
+				INFOPLIST_FILE = "BigCursor/BigCursor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4019DD617F94777007959F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BigCursor.app/Contents/MacOS/BigCursor";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigCursor/BigCursor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BigCursorTests/BigCursorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4019DD717F94777007959F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BigCursor.app/Contents/MacOS/BigCursor";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigCursor/BigCursor-Prefix.pch";
+				INFOPLIST_FILE = "BigCursorTests/BigCursorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4019D9C17F94776007959F5 /* Build configuration list for PBXProject "BigCursor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4019DD017F94777007959F5 /* Debug */,
+				D4019DD117F94777007959F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4019DD217F94777007959F5 /* Build configuration list for PBXNativeTarget "BigCursor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4019DD317F94777007959F5 /* Debug */,
+				D4019DD417F94777007959F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4019DD517F94777007959F5 /* Build configuration list for PBXNativeTarget "BigCursorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4019DD617F94777007959F5 /* Debug */,
+				D4019DD717F94777007959F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4019D9917F94776007959F5 /* Project object */;
+}
