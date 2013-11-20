@@ -4,10 +4,10 @@
 
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
 {
-	self = [super initWithContentRect:contentRect styleMask:0 backing:bufferingType defer:flag];
+	self = [super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:bufferingType defer:flag];
 
 	if (self) {
-		[self setAcceptsMouseMovedEvents:YES];
+//		[self setAcceptsMouseMovedEvents:YES];
 		[self setBackgroundColor:[NSColor clearColor]];
 		[self setMovableByWindowBackground:NO];
 		[self setExcludedFromWindowsMenu:YES];
@@ -19,6 +19,16 @@
 	}
 	return self;
 }
+//
+//- (BOOL)canBecomeKeyWindow
+//{
+//	return NO;
+//}
+//
+//- (BOOL)canBecomeMainWindow
+//{
+//	return NO;
+//}
 
 
 @end
