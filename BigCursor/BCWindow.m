@@ -7,28 +7,16 @@
 	self = [super initWithContentRect:contentRect styleMask:NSBorderlessWindowMask backing:bufferingType defer:flag];
 
 	if (self) {
-//		[self setAcceptsMouseMovedEvents:YES];
-		[self setBackgroundColor:[NSColor clearColor]];
-		[self setMovableByWindowBackground:NO];
-		[self setExcludedFromWindowsMenu:YES];
-		[self setAlphaValue:1.0];
-		[self setOpaque:NO];
-		[self setHasShadow:YES];
+		self.backgroundColor = [NSColor clearColor];
+		self.movableByWindowBackground = NO;
+		self.excludedFromWindowsMenu = YES;
+		self.alphaValue = 1.0;
+		self.opaque = NO;
+		self.hasShadow = YES;
 		[self useOptimizedDrawing:YES];
 		[self setLevel:CGShieldingWindowLevel() + 1];
 	}
 	return self;
 }
-//
-//- (BOOL)canBecomeKeyWindow
-//{
-//	return NO;
-//}
-//
-//- (BOOL)canBecomeMainWindow
-//{
-//	return NO;
-//}
-
 
 @end

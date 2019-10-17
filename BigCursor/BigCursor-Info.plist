@@ -34,5 +34,7 @@
 	<string>NSApplication</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>We want to make a big cursor for you!</string>
 </dict>
 </plist>

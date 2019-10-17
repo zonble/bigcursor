@@ -1,9 +1,10 @@
 #import "BCAppDelegate.h"
 
-static CGEventRef MyEventTapCallBack (CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon);
+static CGEventRef MyEventTapCallBack(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon);
 
 @interface BCAppDelegate ()
 - (void)startTracking;
+
 - (void)endTracking;
 @end
 
@@ -35,19 +36,18 @@ static CGEventRef MyEventTapCallBack (CGEventTapProxy proxy, CGEventType type, C
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	[self.window setAlphaValue:0.5];
+	self.window.alphaValue = 0.5;
 
 	statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:80.0];
-	[statusItem setTitle:@"Big Cursor"];
+	statusItem.title = @"Big Cursor";
 	NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Big Cursor"];
 	NSMenuItem *enableItem = [menu addItemWithTitle:@"Enabled" action:@selector(enable:) keyEquivalent:@""];
-	[enableItem setTarget:self];
+	enableItem.target = self;
 	[menu addItem:[NSMenuItem separatorItem]];
 	[menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""];
-	[statusItem setMenu:menu];
+	statusItem.menu = menu;
 
 	enabled = YES;
-
 	[self startTracking];
 }
 
@@ -60,11 +60,16 @@ static CGEventRef MyEventTapCallBack (CGEventTapProxy proxy, CGEventType type, C
 
 	if (!eventTapPortRef) {
 		CGEventMask mask = \
-			CGEventMaskBit(kCGEventMouseMoved) |
-			CGEventMaskBit(kCGEventLeftMouseDragged) |
-			CGEventMaskBit(kCGEventRightMouseDragged);
-		eventTapPortRef = CGEventTapCreate(kCGSessionEventTap, kCGTailAppendEventTap, 0, mask, MyEventTapCallBack, (__bridge void *)(self));
+            CGEventMaskBit(kCGEventMouseMoved) | CGEventMaskBit(kCGEventLeftMouseDragged) | CGEventMaskBit(kCGEventRightMouseDragged);
+		// CGEventTapCreate requires "NSAppleEventsUsageDescription" in Info.plist file
+		// since macOS Mojave.
+		eventTapPortRef = CGEventTapCreate(kCGSessionEventTap, kCGTailAppendEventTap, 0, mask, MyEventTapCallBack, (__bridge void *) (self));
+
 	}
+	if (!eventTapPortRef) {
+		return;
+	}
+
 	if (!source) {
 		source = CFMachPortCreateRunLoopSource(NULL, eventTapPortRef, 0);
 		CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopCommonModes);
@@ -96,18 +101,13 @@ static CGEventRef MyEventTapCallBack (CGEventTapProxy proxy, CGEventType type, C
 - (IBAction)enable:(id)sender
 {
 	enabled = !enabled;
-	if (enabled) {
-		[self startTracking];
-	}
-	else {
-		[self endTracking];
-	}
+	enabled ? [self startTracking] : [self endTracking];
 }
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem
 {
-	if ([menuItem action] == @selector(enable:)) {
-		[menuItem setState:enabled];
+	if (menuItem.action == @selector(enable:)) {
+		menuItem.state = enabled;
 		return YES;
 	}
 	return YES;
@@ -116,10 +116,9 @@ static CGEventRef MyEventTapCallBack (CGEventTapProxy proxy, CGEventType type, C
 #pragma mark -
 
 
-CGEventRef MyEventTapCallBack (CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon)
-{
+CGEventRef MyEventTapCallBack(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon) {
 	@autoreleasepool {
-		BCAppDelegate *self = (__bridge BCAppDelegate *)(refcon);
+		BCAppDelegate *self = (__bridge BCAppDelegate *) (refcon);
 		CGPoint p = CGEventGetLocation(event);
 		[self moveWindowToPoint:p];
 	}
