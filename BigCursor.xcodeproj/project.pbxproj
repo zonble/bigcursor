@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,20 +58,16 @@
 /* Begin PBXFrameworksBuildPhase section */
 		D4019D9E17F94776007959F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				D4019DA517F94776007959F5 /* Cocoa.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4019DBF17F94777007959F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				D4019DC517F94777007959F5 /* Cocoa.framework in Frameworks */,
 				D4019DC417F94777007959F5 /* XCTest.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -172,8 +168,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = BigCursor;
 			productName = BigCursor;
 			productReference = D4019DA117F94776007959F5 /* BigCursor.app */;
@@ -216,7 +210,6 @@
 				};
 			};
 			buildConfigurationList = D4019D9C17F94776007959F5 /* Build configuration list for PBXProject "BigCursor" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -225,6 +218,7 @@
 				Base,
 			);
 			mainGroup = D4019D9817F94776007959F5;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = D4019DA217F94776007959F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,43 +232,35 @@
 /* Begin PBXResourcesBuildPhase section */
 		D4019D9F17F94776007959F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				D4019DAF17F94776007959F5 /* InfoPlist.strings in Resources */,
 				D4019DBD17F94776007959F5 /* Images.xcassets in Resources */,
 				D4019DB517F94776007959F5 /* Credits.rtf in Resources */,
 				D4019DBB17F94776007959F5 /* MainMenu.xib in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4019DC017F94777007959F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				D4019DCD17F94777007959F5 /* InfoPlist.strings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4019D9D17F94776007959F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				D4019DDA17F9498E007959F5 /* BCWindow.m in Sources */,
 				D4019DB117F94776007959F5 /* main.m in Sources */,
 				D4019DB817F94776007959F5 /* BCAppDelegate.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4019DBE17F94777007959F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				D4019DCF17F94777007959F5 /* BigCursorTests.m in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -322,7 +308,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D4019DD017F94777007959F5 /* Debug */ = {
+		D4019DD017F94777007959F5 /* Debug configuration for PBXProject "BigCursor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -360,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		D4019DD117F94777007959F5 /* Release */ = {
+		D4019DD117F94777007959F5 /* Release configuration for PBXProject "BigCursor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,43 +378,43 @@
 			};
 			name = Release;
 		};
-		D4019DD317F94777007959F5 /* Debug */ = {
+		D4019DD317F94777007959F5 /* Debug configuration for PBXNativeTarget "BigCursor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BigCursor/BigCursor.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KXC5CY4NY8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BigCursor/BigCursor-Prefix.pch";
 				INFOPLIST_FILE = "BigCursor/BigCursor-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		D4019DD417F94777007959F5 /* Release */ = {
+		D4019DD417F94777007959F5 /* Release configuration for PBXNativeTarget "BigCursor" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BigCursor/BigCursor.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KXC5CY4NY8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BigCursor/BigCursor-Prefix.pch";
 				INFOPLIST_FILE = "BigCursor/BigCursor-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		D4019DD617F94777007959F5 /* Debug */ = {
+		D4019DD617F94777007959F5 /* Debug configuration for PBXNativeTarget "BigCursorTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BigCursor.app/Contents/MacOS/BigCursor";
@@ -450,7 +436,7 @@
 			};
 			name = Debug;
 		};
-		D4019DD717F94777007959F5 /* Release */ = {
+		D4019DD717F94777007959F5 /* Release configuration for PBXNativeTarget "BigCursorTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BigCursor.app/Contents/MacOS/BigCursor";
@@ -474,28 +460,25 @@
 		D4019D9C17F94776007959F5 /* Build configuration list for PBXProject "BigCursor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4019DD017F94777007959F5 /* Debug */,
-				D4019DD117F94777007959F5 /* Release */,
+				D4019DD017F94777007959F5 /* Debug configuration for PBXProject "BigCursor" */,
+				D4019DD117F94777007959F5 /* Release configuration for PBXProject "BigCursor" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		D4019DD217F94777007959F5 /* Build configuration list for PBXNativeTarget "BigCursor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4019DD317F94777007959F5 /* Debug */,
-				D4019DD417F94777007959F5 /* Release */,
+				D4019DD317F94777007959F5 /* Debug configuration for PBXNativeTarget "BigCursor" */,
+				D4019DD417F94777007959F5 /* Release configuration for PBXNativeTarget "BigCursor" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		D4019DD517F94777007959F5 /* Build configuration list for PBXNativeTarget "BigCursorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4019DD617F94777007959F5 /* Debug */,
-				D4019DD717F94777007959F5 /* Release */,
+				D4019DD617F94777007959F5 /* Debug configuration for PBXNativeTarget "BigCursorTests" */,
+				D4019DD717F94777007959F5 /* Release configuration for PBXNativeTarget "BigCursorTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
